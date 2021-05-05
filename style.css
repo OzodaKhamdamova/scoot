@@ -279,4 +279,33 @@ margin-bottom: 40px;
    background-repeat: no-repeat;
    background-position: center end; 
 }
+.social-section{
+    background-color: var(--dark-grey);
+    margin: 0 auto;
+    padding-top: 102px;
+    padding-bottom: 102px;
+    background-image: url("images/site-footer-bg-circles.svg");
+    background-repeat: no-repeat;
+    background-position: 450px 190px;
+
+}
+.social-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social-title{
+    width: 415px;
+    font-family: "Space Mono" sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #FFFFFF;
+}
+.social-apps:first-child {
+    margin-right: 20px;
+}
+
 
