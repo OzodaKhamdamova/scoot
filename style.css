@@ -57,6 +57,7 @@ body {
 .site-nav{
     display: flex;
     margin-top: 22px;
+    margin-bottom: 21px;
 }
 .nav-list{
     display: flex;
@@ -83,4 +84,46 @@ body {
 }
 .visually-hidden{
     visibility: hidden;
+}
+.hero-section{
+    color: #fff;
+    padding: 153px 0;
+    background-image:linear-gradient( rgba(0,0,0,0.8),rgba(0,0,0,0.7)),
+    url("images/site-hero-bg-scoot.png");
+    background-repeat: no-repeat;
+    background-position: center center,
+        calc(50% + 300px) 85%;
+}
+.hero-title{
+    width: 480px;
+    font-family: "Space Mono", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+
+}
+.hero-text{
+    font-family: "Lexend Deca", sans-serif ;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    width: 405px;
+    margin-left: 100px;
+    margin-bottom: 40px;
+}
+.hero-link{
+   margin-left: 100px;
+}
+.hero-mini-container::after{
+    content: "";
+    display: block;
+    width: 447px;
+    height: 138px;
+    background-repeat: no-repeat;
+    background-position: calc(50% + 300px) 70%;
+    background-image: url("images/yellow-arrow-to-right.svg");
+    background-size: contain;
 }
