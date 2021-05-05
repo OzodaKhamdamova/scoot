@@ -307,5 +307,45 @@ margin-bottom: 40px;
 .social-apps:first-child {
     margin-right: 20px;
 }
-
-
+.site-footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-bottom: 32px;
+    background-color: #333A44;
+}
+.footer__container {
+    display: flex;
+    align-items: center;
+}
+.footer__list {
+    margin-left: 60px;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.footer__item:not(:last-child) {
+    margin-right: 32px;
+}
+.footer__link {
+    color: #fff;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.footer__link:hover {
+    color: var(--yellow);
+}
+.footer__socials {
+    display: flex;
+    align-items: center;
+}
+.footer_social-link:not(:last-child) {
+    margin-right: 24px;
+}
+.footer_social-link img {
+    display: block;
+}
+.footer_social-link:hover {
+    color: white;
+}
