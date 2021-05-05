@@ -1,0 +1,86 @@
+:root{
+    --dim-grey: rgb(147, 156, 170);
+    --dark-grey: rgb(73, 85, 103);
+    --yellow: rgb(252, 183, 43);
+    --snow-color: rgb(242, 245, 249);
+    --light-yellow: rgb(255, 244, 223);
+    --light-grey:  rgb(229, 236, 244);
+    
+}
+/* lexend-deca-regular - latin */
+@font-face {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/lexend-deca-v7-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lexend-deca-v7-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* space-mono-regular - latin */
+@font-face {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/space-mono-v6-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/space-mono-v6-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* space-mono-700 - latin */
+  @font-face {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/space-mono-v6-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/space-mono-v6-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+/* General Styles */
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #fff;
+    color: var(--dim-grey);
+}
+.container{
+    width: 1100px;
+    padding-right: 25px ;
+    padding-left: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.site-nav{
+    display: flex;
+    margin-top: 22px;
+}
+.nav-list{
+    display: flex;
+}
+.nav-list-item{
+    list-style: none;
+    margin-right: 32px;
+}
+.nav-link{
+    text-decoration: none;
+    color: var(--dim-grey);
+}
+.site-logo{
+    margin-right: 73px;
+}
+.site-link{
+    padding: 14px 39px 14px 39px;
+    color: #fff;
+    background-color: var(--yellow);
+    text-decoration: none;
+}
+.header-link{
+    margin-left: auto;
+}
+.visually-hidden{
+    visibility: hidden;
+}
