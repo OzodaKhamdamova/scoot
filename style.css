@@ -70,6 +70,7 @@ body {
 .nav-link{
     text-decoration: none;
     color: var(--dim-grey);
+    font-family: "Space Mono" sans-serif;
 }
 .nav-link:hover{
     color: var(--yellow);
