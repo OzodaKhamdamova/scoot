@@ -71,6 +71,9 @@ body {
     text-decoration: none;
     color: var(--dim-grey);
 }
+.nav-link:hover{
+    color: var(--yellow);
+}
 .site-logo{
     margin-right: 73px;
 }
