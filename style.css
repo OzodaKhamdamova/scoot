@@ -46,6 +46,7 @@ body {
     line-height: 1.5;
     background-color: #fff;
     color: var(--dim-grey);
+    overflow-x: hidden;
 }
 .container{
     width: 1100px;
@@ -88,7 +89,7 @@ body {
 .hero-section{
     color: #fff;
     padding: 153px 0;
-    background-image:linear-gradient( rgba(0,0,0,0.8),rgba(0,0,0,0.7)),
+    background-image:linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)),
     url("images/site-hero-bg-scoot.png");
     background-repeat: no-repeat;
     background-position: center center,
@@ -126,4 +127,126 @@ body {
     background-position: calc(50% + 300px) 70%;
     background-image: url("images/yellow-arrow-to-right.svg");
     background-size: contain;
+
 }
+.hero-mini-container::before{
+    content: "";
+    display: block;
+    width: 203px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-position: calc(70% + 500px) 50%;
+    background-image: url("images/yellow-arrow-to-left.svg");
+    
+    
+}
+.info-list{
+    display: flex;
+    margin-top: 298px;
+    position: relative;
+    margin-bottom: 200px;
+}
+.info-list::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: -165px;
+    top:-100px;
+    width: 960px;
+    height: 10px;
+    background-color: #E5ECF4;
+}
+.info-list-item{
+    list-style: none;
+    margin-right: 30px;
+}
+.info-list-item:not(:last-child()){
+    margin-right: 30px;
+}
+.location::before{
+    content: "";
+    position: absolute;
+    top: -150px;
+    width: 96px;
+    height: 96px;
+    background-color: var(--yellow);
+    border-radius: 50%;
+    background-image: url("images/locate-with-app.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.scooter::before{
+    content: "";
+    position: absolute;
+    top: -150px;
+    width: 96px;
+    height: 96px;
+    background-color: var(--yellow);
+    border-radius: 50%;
+    background-image: url("images/pick-your-scooter.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.ride::before{
+    content: "";
+    position: absolute;
+    top: -150px;
+    width: 96px;
+    height: 96px;
+    background-color: var(--yellow);
+    border-radius: 50%;
+    background-image: url("images/enjoy-the-ride.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.info-list-item-title{
+    font-family: "Space Mono" , sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: #495567;
+    margin-bottom: 27px;
+}
+.info-list-item-text{
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 25px;
+}
+.info-details-item{
+    list-style: none;
+    width: 445px;
+    position: relative;
+    margin-bottom: 160px;
+}
+.info-details-title{
+    font-family: "Space Mono" , sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: var(--dark-grey);
+}
+.info-details-text{
+font-size: 15px;
+line-height: 25px;
+margin-bottom: 40px;
+}
+.city{
+    margin-left: auto;
+}
+.easy-to-use::after{
+   content: "";
+   background-image: url("images/info-1.jpg");
+   width: 900px;
+   height: 445px;
+   top: -100px;
+   right: -900px;
+   position: absolute;
+   background-repeat: no-repeat;
+   background-position: center end;
+}
+
