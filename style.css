@@ -80,6 +80,11 @@ body {
     background-color: var(--yellow);
     text-decoration: none;
 }
+.site-link:hover{
+    background-color: #fff;
+    color: var(--yellow);
+    border: 2px solid var(--yellow);
+}
 .header-link{
     margin-left: auto;
 }
@@ -118,25 +123,33 @@ body {
 .hero-link{
    margin-left: 100px;
 }
+.hero-mini-container{
+    position: relative;
+}
 .hero-mini-container::after{
     content: "";
     display: block;
     width: 447px;
     height: 138px;
     background-repeat: no-repeat;
-    background-position: calc(50% + 300px) 70%;
     background-image: url("images/yellow-arrow-to-right.svg");
+    position: absolute;
+    left: 550px;
+    top: 180px;
     background-size: contain;
 
 }
 .hero-mini-container::before{
     content: "";
     display: block;
-    width: 203px;
-    height: 10px;
+    position: absolute;
+    width: 503px;
+    height: 500px;
+    left: -500px;
+    bottom: -370px;
     background-repeat: no-repeat;
-    background-position: calc(70% + 500px) 50%;
     background-image: url("images/yellow-arrow-to-left.svg");
+    background-size: contain;
     
     
 }
@@ -308,7 +321,6 @@ margin-bottom: 40px;
     margin-right: 20px;
 }
 .site-footer {
-    max-width: 1440px;
     margin: 0 auto;
     padding-top: 35px;
     padding-bottom: 32px;
