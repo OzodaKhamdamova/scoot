@@ -1,0 +1,165 @@
+:root{
+    --dim-grey: rgb(147, 156, 170);
+    --dark-grey: rgb(73, 85, 103);
+    --yellow: rgb(252, 183, 43);
+    --snow-color: rgb(242, 245, 249);
+    --light-yellow: rgb(255, 244, 223);
+    --light-grey:  rgb(229, 236, 244);
+    
+}
+/* lexend-deca-regular - latin */
+@font-face {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/lexend-deca-v7-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lexend-deca-v7-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* space-mono-regular - latin */
+@font-face {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/space-mono-v6-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/space-mono-v6-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* space-mono-700 - latin */
+  @font-face {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/space-mono-v6-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/space-mono-v6-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+/* General Styles */
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #fff;
+    color: var(--dim-grey);
+    overflow-x: hidden;
+}
+.container{
+    width: 1100px;
+    padding-right: 25px ;
+    padding-left: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.site-link{
+    padding: 14px 39px 14px 39px;
+    color: #fff;
+    background-color: var(--yellow);
+    text-decoration: none;
+}
+.site-link:hover{
+    background-color: #fff;
+    color: var(--yellow);
+    border: 2px solid var(--yellow);
+}
+.site-nav{
+    display: flex;
+    margin-top: 22px;
+    margin-bottom: 21px;
+}
+.nav-list{
+    display: flex;
+}
+.nav-list-item{
+    list-style: none;
+    margin-right: 32px;
+}
+.nav-link{
+    text-decoration: none;
+    color: var(--dim-grey);
+    font-family: "Space Mono" sans-serif;
+}
+.nav-link:hover{
+    color: var(--yellow);
+}
+.site-logo{
+    margin-right: 73px;
+}
+.visually-hidden{
+    visibility: hidden;}
+.header-link{
+    margin-left: auto;
+    }
+.social-section{
+        background-color: var(--dark-grey);
+        margin: 0 auto;
+        padding-top: 102px;
+        padding-bottom: 102px;
+        background-image: url("images/site-footer-bg-circles.svg");
+        background-repeat: no-repeat;
+        background-position: 450px 190px;
+    
+    }
+    .social-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .social-title{
+        width: 415px;
+        font-family: "Space Mono" sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: #FFFFFF;
+    }
+    .social-apps:first-child {
+        margin-right: 20px;
+    }
+    .site-footer {
+        margin: 0 auto;
+        padding-top: 35px;
+        padding-bottom: 32px;
+        background-color: #333A44;
+    }
+    .footer__container {
+        display: flex;
+        align-items: center;
+    }
+    .footer__list {
+        margin-left: 60px;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+    .footer__item:not(:last-child) {
+        margin-right: 32px;
+    }
+    .footer__link {
+        color: #fff;
+        transition: all 0.3s ease;
+        text-decoration: none;
+    }
+    .footer__link:hover {
+        color: var(--yellow);
+    }
+    .footer__socials {
+        display: flex;
+        align-items: center;
+    }
+    .footer_social-link:not(:last-child) {
+        margin-right: 24px;
+    }
+    .footer_social-link img {
+        display: block;
+    }
+    .footer_social-link:hover {
+        color: white;
+    }
