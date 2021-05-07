@@ -83,6 +83,7 @@ body {
     color: #fff;
     background-color: var(--yellow);
     text-decoration: none;
+    border: 2px solid var(--yellow);
 }
 .site-link:hover{
     background-color: #fff;
