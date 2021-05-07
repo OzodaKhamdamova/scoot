@@ -235,5 +235,27 @@
     top: -285px;
     left: 195px;
 }
-
+.not-listed{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+.not-listed-title{
+    color: var(--dark-grey);
+    font-family :"Mono Space", sans-serif;
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: -2.14px;
+    margin: 0;
+    width: 350px;
+    margin-right: 20px;
+}
+ .not-listed-text{
+    margin: 0;
+    width: 445px;
+    margin-right: 50px;
+}
+.not-listed-link{
+    margin: auto;
+}
 
