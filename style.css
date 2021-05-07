@@ -77,6 +77,7 @@ body {
 }
 .site-logo{
     margin-right: 73px;
+    margin-top: 10px;
 }
 .site-link{
     padding: 14px 39px 14px 39px;
@@ -255,8 +256,7 @@ line-height: 25px;
 margin-bottom: 40px;
 }
 .city{
-   margin-left: auto;
-    
+   margin-left: auto;   
 }
 .easy-to-use::after{
    content: "";
@@ -279,8 +279,6 @@ margin-bottom: 40px;
     position: absolute;
     background-repeat: no-repeat;
     display: block;
-    
-    
 }
 .payment::after{
     content: "";
@@ -447,8 +445,7 @@ margin-bottom: 40px;
 }
 .values-list{
     display: flex;
-    margin-bottom: 100px;
-    
+    margin-bottom: 100px; 
 }
 .values__item{
     list-style-type: none;
@@ -470,6 +467,7 @@ margin-bottom: 40px;
     display: inline-block;
 }
 .value-heading{
+    margin-top: 0;
     margin-bottom: 255px;
     text-align: center;
 }
