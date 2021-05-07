@@ -317,8 +317,8 @@ margin-bottom: 40px;
     letter-spacing: -2.14286px;
     color: #FFFFFF;
 }
-.social-apps:first-child {
-    margin-right: 20px;
+.social-app-item{
+    margin-right: 18px;
 }
 .site-footer {
     margin: 0 auto;
