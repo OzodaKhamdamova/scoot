@@ -1,22 +1,24 @@
-.about-hero{
+.careers-hero{
     color: #fff;
     padding: 72px 0;
     background-image:linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)),
-    url("images/about-bg.png");
+    url("images/careers-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
+   
 }
-.about-hero__title{
-   font-family: "Space Mono" , sans-serif;
-   font-weight: bold;
-   font-size: 56px;
-   line-height: 56px;
-   letter-spacing: -2.5px;
-   color: #FFFFFF;
-   display: flex;
-   align-items: center;
-}
-.about-hero__title::after{
+.careers-hero__title{
+    font-family: "Space Mono" , sans-serif;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    letter-spacing: -2.5px;
+ }
+ .careers-hero__title::after{
     content: "";
     display: block;
     width: 234px;
@@ -28,17 +30,11 @@
     top: 200px;
     background-size: contain;
 }
-.about-info-list{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 100px;
-    margin-top: 245px;
-}
-.info-list-item{
-    list-style: none;
+.join-us{
+    margin-top: 186px;
     width: 445px;
     position: relative;
-    margin-bottom: 150px;
+    margin-bottom: 40px;
 }
 .info-list-title{
     font-family: "Space Mono" , sans-serif;
@@ -50,16 +46,13 @@
     color: var(--dark-grey);
 }
 .info-details-text{
-font-size: 15px;
-line-height: 25px;
-margin-bottom: 40px;
+  font-size: 15px;
+  line-height: 25px;
+  line-height: 25px;
 }
-.urban{
-    margin-left: auto;
-}
-.mobility::after{
+.join-us::after{
     content: "";
-    background-image: url("images/mobility.png");
+    background-image: url("images/mission.png");
     width: 1079px;
     height: 445px;
     top: -100px;
@@ -68,21 +61,12 @@ margin-bottom: 40px;
     background-repeat: no-repeat;
     background-position: center end;  
 }
-.urban::before{
-   content: "";
-   background-image: url("images/urban-living.png");
-   width: 1079px;
-   height: 445px;
-   top: -100px;
-   right: 500px;
-   position: absolute;
-   background-repeat: no-repeat;
-   background-position: center end;
+.values{
+    margin-top: 120px;
 }
 .values-list{
     display: flex;
     margin-bottom: 100px;
-    
 }
 .values__item{
     list-style-type: none;
@@ -108,7 +92,7 @@ margin-bottom: 40px;
     text-align: center;
 }
 .values__title{
-    font-family: "Space Mono" sans-serif;
+    font-family: Space Mono;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -165,86 +149,35 @@ margin-bottom: 40px;
     background-position: center center;
     z-index: -2;
 }
-.faq-box{
-   display: flex;
-   align-items: flex-start;
-   margin-bottom: 90px;
+.jobs-list{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
 }
-.faq-box:not(:last-child){
-    margin-bottom: 64px;
-}
-.faq-heading{
-    font-family: "Space Mono" , sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 48px;
-    text-align: center;
-    letter-spacing: -2.14286px;
-    color: var(--dark-grey);
-}
-.faq-list{
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    width: 730px;
-    margin-left: auto;
-}
-.faqt-list__item{
-    padding: 32px 40px;
+.jobs__item{
+    display: flex;
+    margin-bottom: 25px;
+    max-width: 1110px;
     background-color: var(--snow-color);
-    color: var(--dark-grey);
-    position: relative;
-    list-style: none;
-    
 }
-.faq__title{
+.jobs-link{
+    margin: 38px 64px 37px auto;
+}
+.jobs__item-text{
+    margin-left: 40px;
+}
+.jobs-title{
     font-family: "Space Mono" , sans-serif;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 48px;
-    letter-spacing: -1.78571px;
-    color: var(--dark-grey);
-    margin: 0;
-
-}
-.question{
-    font-family: "Space Mono" sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     letter-spacing: -1.07143px;
     color: #495567;
+    margin-bottom: 0;
 }
-.faqt-list__item::after{
-    content: "";
-    width: 16px;
-    height: 16px;
-    display: block;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    background-image: url("images/bottom.png");
-    position: absolute;
-    top: 42px;
-    right: 30px;
+.jobs-address{
+    font-size: 15px;
+    line-height: 25px;
+    color: #495567;
+    margin-top: 8px;
 }
-.faqt-list__item:active::after{
-    transition:ease 0.3s;
-    transform: rotate(180deg);
-}
-.faqt-list__item:hover{
-    background-color: var(--light-yellow);
-}
-.faqt-list__item:hover .answer{
-    display: block;
-    margin-top: 24px;
-}
-.faqt-list__item:not(:last-child){
-    margin-bottom: 16px;
-}
-.answer{
-    margin: 0;
-    display: none;
-}
-
