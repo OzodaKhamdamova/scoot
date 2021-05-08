@@ -309,7 +309,6 @@ margin-bottom: 40px;
     background-image: url("images/site-footer-bg-circles.svg");
     background-repeat: no-repeat;
     background-position: 450px 190px;
-
 }
 .social-container{
     display: flex;
@@ -318,7 +317,7 @@ margin-bottom: 40px;
 }
 .social-title{
     width: 415px;
-    font-family: "Space Mono" sans-serif;
+    font-family: "Space Mono" , sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
@@ -482,7 +481,7 @@ margin-bottom: 40px;
     text-align: center;
 }
 .values__title{
-    font-family: "Space Mono" sans-serif;
+    font-family: "Space Mono" , sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -583,7 +582,7 @@ margin-bottom: 40px;
 
 }
 .question{
-    font-family: "Space Mono" sans-serif;
+    font-family: "Space Mono" , sans-serif;
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
@@ -603,8 +602,8 @@ margin-bottom: 40px;
     top: 42px;
     right: 30px;
 }
-.faqt-list__item:active::after{
-    transition:ease 0.3s;
+.faqt-list__item:hover::after{
+    transition:ease 0.5s;
     transform: rotate(180deg);
 }
 .faqt-list__item:hover{
