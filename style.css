@@ -108,13 +108,17 @@ ul{
     visibility: hidden;
 }
 .hero-section{
-    color: #fff;
-    padding: 153px 0;
-    background-image:linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)),
-    url("images/site-hero-bg-scoot.png");
+    margin-right: auto;
+    margin-left: auto;
+    padding: 150px 0px;
+    background: linear-gradient(rgba(8, 5, 56, 0.7), rgba(8, 5, 56, 0.7)), url('images/site-hero-bg-scoot.png');
     background-repeat: no-repeat;
-    background-position: center center,
-        calc(50% + 300px) 85%;
+    background-position: center center, calc(50% + 300px) 85%;
+    margin-bottom: 160px;
+    color: #fff;
+}
+.hero-container{
+    max-width: 1440px;
 }
 .hero-title{
     width: 480px;
@@ -235,10 +239,10 @@ ul{
     margin-bottom: 27px;
 }
 .info-list-item-text{
-font-style: normal;
-font-weight: normal;
-font-size: 15px;
-line-height: 25px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
 }
 .info-list-details{
     display: flex;
@@ -309,6 +313,7 @@ margin-bottom: 40px;
     background-image: url("images/site-footer-bg-circles.svg");
     background-repeat: no-repeat;
     background-position: 450px 190px;
+    max-width: 1440px;
 }
 .social-container{
     display: flex;
@@ -334,6 +339,7 @@ margin-bottom: 40px;
     background-color: #333A44;
 }
 .footer__container {
+    position: relative;
     display: flex;
     align-items: center;
 }
