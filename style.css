@@ -144,6 +144,7 @@ ul{
 }
 .hero-mini-container{
     position: relative;
+    display: block;
 }
 .hero-mini-container::after{
     content: "";
@@ -887,5 +888,209 @@ margin-bottom: 40px;
 }
 .not-listed-link{
     margin: auto;
+}
+/* TABLETS*/
+
+@media  screen and (max-width:768px) {
+    body{
+        width: 768px;
+        overflow-x: hidden;
+        }
+    header{
+        width: 768px;
+        overflow-x: hidden;
+    }
+    main{
+        width: 768px;
+        overflow-x: hidden;
+    }
+   .container{
+      max-width: 768px;
+      padding: 0px 30px;
+      margin: 0 auto;
+   } 
+   .hero-mini-container{
+       text-align: center;
+   }
+   .hero-title{
+       text-align: center;
+       margin-left: 97px;
+       margin-bottom: 0;
+   }
+   .hero-text{
+       width: 579px;
+       margin-left: auto;
+       margin-right: auto;
+       margin-top: 24px;
+   }
+   .hero-link{
+       margin: 0 auto;
+   }
+   .hero-mini-container::after{
+    content: "";
+    display: block;
+    width: 447px;
+    height: 138px;
+    background-repeat: no-repeat;
+    background-image: url("images/yellow-arrow-to-right.svg");
+    position: absolute;
+    left: -190px;
+    top: 280px;
+    background-size: contain;
+}
+.hero-mini-container::before{
+    content: "";
+    display: none;
+    position: absolute;
+    width: 503px;
+    height: 500px;
+    left: -500px;
+    bottom: -370px;
+    background-repeat: no-repeat;
+    background-image: url("images/yellow-arrow-to-left.svg");
+    background-size: contain;   
+}
+.info-list{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -200px;
+    margin-bottom: 345px;
+}
+.info-list::before{
+    content: "";
+    display: none;
+    position: absolute;
+    left: -165px;
+    top:-100px;
+    width: 960px;
+    height: 10px;
+    background-color: #E5ECF4;
+}
+.info-list::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 145px;
+    top: -95px;
+    width: 1px;
+    height: 517px;
+    background-color: #E5ECF4;
+    border: 15px solid #E5ECF4;
+}
+.info-list-item{
+    margin-left: 272px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.location::before{
+    content: "";
+    position: absolute;
+    left: -150px;
+    top: 25px;
+    width: 96px;
+    height: 96px;
+    background-color: var(--yellow);
+    border-radius: 50%;
+    background-image: url("images/locate-with-app.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.scooter::before{
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -150px;
+    width: 96px;
+    height: 96px;
+    background-color: var(--yellow);
+    border-radius: 50%;
+    background-image: url("images/pick-your-scooter.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.ride::before{
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: -150px;
+    width: 96px;
+    height: 96px;
+    background-color: var(--yellow);
+    border-radius: 50%;
+    background-image: url("images/enjoy-the-ride.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.info-details-list{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+   
+}
+.info-details-item{
+    align-items: center;
+    margin: 56px auto 637px;
+    text-align: center;
+}
+.payment{
+    margin-bottom: 104px;
+}
+.easy-to-use::after{
+    display: block;
+    content: "";
+    background-image: url("images/easy_to_use.png");
+    width: 900px;
+    height: 445px;
+    top: -400px;
+    left: -150px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center end;
+ }
+ .city::after{
+     content: "";
+     background-image: url("images/commint.png");
+     display: block;
+     width: 1000px;
+     height: 445px;
+     top: -550px;
+     left: -550px;
+     position: absolute;
+     background-repeat: no-repeat;
+     display: block;
+ }
+ .payment::after{
+     display: block;
+     content: "";
+    background-image: url("images/zero_hasle.png");
+    width: 1000px;
+    height: 445px;
+    top: -550px;
+    left: -40px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center end; 
+ }
+ .social-section{
+     background-color: var(--dark-grey);
+     display: block;
+     margin: 0 auto;
+     padding-top: 90px;
+     padding-bottom: 90px;
+     background-image: url("images/site-footer-bg-circles.svg");
+     background-repeat: no-repeat;
+     background-position: center 250px;
+     max-width: 1440px;
+ }
+ .site-footer{
+     width: 768px;
+ }
+ .social-container{
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+ }
+    
 }
 
