@@ -889,6 +889,7 @@ margin-bottom: 40px;
 .not-listed-link{
     margin: auto;
 }
+
 /* TABLETS*/
 
 @media  screen and (max-width:768px) {
@@ -1091,6 +1092,268 @@ margin-bottom: 40px;
      flex-direction: column;
      text-align: center;
  }
+    
+}
+
+/**MOBILE**/
+@media screen and (max-width: 375px){
+    html{
+        overflow-x: hidden;
+    }
+    body{
+        width: 375px;
+        overflow-x: hidden;
+    }
+    .container{
+        max-width: 375px;
+        padding: 0px 32px;
+        margin: 0 auto;
+    }
+    .site-header{
+        width: 375px;
+    }
+    main{
+        overflow-x: hidden;
+    }
+    .nav-list{
+        display: none;
+    }
+    .header-link{
+        display: none;
+    }
+    .site-nav{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .logo-link{
+        margin-left: 79px;
+    }
+    .burger-nav{
+        display: block;
+        outline: none;
+        border: none;
+        background-color: #fff;
+        cursor: pointer;
+    }
+    .hero-section{
+        padding: 115px 0 180px 0;
+        background-position: center center, calc(50% - 160px) -950px;
+        margin-bottom: 122px;
+    }
+    .hero-mini-container{
+        width: 311px;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        left: -170px;
+    
+    }
+    .hero-mini-container::after{
+        display: block;
+        width: 600px;
+        left: -530px;
+        top: 340px;
+    }
+    .hero-title{
+        max-width: 311px;
+        margin: 0 auto;
+        margin-bottom: 24px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .hero-text{
+        max-width: 311px;
+        margin-bottom: 32px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .info-list{
+        display: flex;
+        margin-bottom: 120px;
+        flex-direction: column;
+        position: relative;
+        left: -470px;
+        
+    }
+    .info-list-item{
+        max-width: 311px;
+        text-align: center;
+        margin-top: 120px;
+    }
+    .info-list::before{
+        display: none;
+    }
+    .location::before{
+        content: "";
+        position: absolute;
+        left: 100px;
+        top: -125px;
+        width: 96px;
+        height: 96px;
+        background-color: var(--yellow);
+        border-radius: 50%;
+        background-image: url("images/locate-with-app.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .scooter::before{
+        content: "";
+        position: absolute;
+        left: 100px;
+        top: -105px;
+        width: 96px;
+        height: 96px;
+        background-color: var(--yellow);
+        border-radius: 50%;
+        background-image: url("images/pick-your-scooter.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .ride::before{
+        content: "";
+        position: absolute;
+        left: 100px;
+        top: -105px;
+        width: 96px;
+        height: 96px;
+        background-color: var(--yellow);
+        border-radius: 50%;
+        background-image: url("images/enjoy-the-ride.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .info-details-list{
+        width: 311px;
+        display: flex;
+        position: relative;
+        left: -200px;
+    }
+
+    .info-details-title{
+        width: 311px;
+        font-size: 32px;
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: -1.42857px;
+    }
+    .info-details-text{
+        font-size: 15px;
+        line-height: 25px;
+        width: 311px;
+    }
+    .easy-to-use::after{
+        display: block;
+        content: "";
+        background-image: url("images/easy_to_use.png");
+        width: 724px;
+        height: 445px;
+        top: -300px;
+        left: -74px;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: contain;
+     }
+     .city::after{
+         content: "";
+         background-image: url("images/commint.png");
+         display: block;
+         width: 724px;
+        height: 445px;
+        top: -330px;
+        left: -400px;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: contain;
+     }
+     .payment::after{
+         display: block;
+         content: "";
+        background-image: url("images/zero_hasle.png");
+        width: 724px;
+        height: 445px;
+        top: -330px;
+        left: 10px;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: contain;
+       
+     }
+     .payment{
+         margin-bottom: 0;
+     }
+     .info-details-item{
+         margin-bottom: 340px;
+         position: relative;
+     }
+     .info-details-item:not(:last-child){
+         margin-bottom: 340px;
+     }
+     .details-link{
+        margin-left: -100px;
+     }
+     footer{
+         width: 375px;
+         overflow-x: hidden;
+     }
+     .social-title{
+         width: 311px;
+         font-size: 32px;
+         line-height: 32px;
+         text-align: center;
+         letter-spacing: -1.42857px;
+         position: relative;
+         left: -200px;
+        
+     }
+     .footer__socials{
+         width: 375px;
+     }
+     .social-apps{
+         display: flex;
+         max-width: 256px;
+         position: relative;
+         left: -200px;
+     }
+     .social-app-item img{
+         width: 113px;
+         height: 40px
+     }
+     .footer__container{
+         display: flex;
+         flex-direction: column;
+         padding: 30px;
+     }
+     .footer__list{
+         display: flex;
+         flex-direction: column;
+         position: relative;
+         left: -130px;
+         text-align: center;
+     }
+
+     .footer__item{
+         margin-bottom: 15px;
+     }
+     .footer__link{
+         font-size: 15px;
+         color: #939CAA;
+     }
+     .site-logo{
+         margin-bottom: 25px;
+         margin-left: -300px;
+     }
+     .footer__socials{
+         padding-top: 85px;
+         margin-left: -95px;
+     }
+
+    
+
     
 }
 
